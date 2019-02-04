@@ -1,0 +1,22 @@
+<h1 class="title">Calendar</h1>
+
+<p class="day">
+	<%= link_to "前月", calendars_nextMonth_path, class:"btn btn-default" %>
+	<%= @date.strftime('%Y/%m') %>
+	<%= link_to "翌月", calendars_preMonth_path, class:"btn btn-default" %>
+</p>
+
+<table class="table">
+	<tr>
+		<th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+	</tr>
+
+	<% @table.each do |day| %>
+		<tr>
+			<% for i in 0..7 do %>
+				<td class="text-center"> <%= p day[i] %> </td>
+			<% end %>
+		</tr>
+	<% end %>
+
+</table>

@@ -1,0 +1,29 @@
+// Place all the styles related to the calendars controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.title{
+	text-align: center;
+}
+.day{
+	text-align: center;
+	font-size: 28px;
+}
+.table th{
+	text-align: center;
+}
+
+.table th:nth-child(1){
+	color: #ff0000;
+}
+
+.table th:nth-child(7){
+	color: blue;
+}
+
+.table td:nth-child(1){
+	color: #ff0000;
+}
+
+.table td:nth-child(7){
+	color: blue;
+}
